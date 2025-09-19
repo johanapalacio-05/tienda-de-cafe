@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Righteous&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #3b141c;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container-header{
+    background: #3b141c;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.container-header header{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.container-header header .logo a{
+   font-family: sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.container-header header ul{
+    display: flex;
+    list-style: none;
+}
+.container-header header nav ul li a{
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    margin: 0 15px;
+    padding: 8px;
+    transition: .5s;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.container-header header nav ul li a:hover{
+    background: #f3961c;
+    color: #3b141c;
+}
+/*Inicio*/
+.home{
+    margin-top: 8%;
+    display: flex;
+    gap: 1200px;
+
+}
+.home .content h3{
+    font-size: 60px;
+    font-family: 'miniver',sans-serif ;
+    color: #f3961c;
+}
+.home .content h1{
+    font-size: 60px;
+    font-family: sans-serif;
+    color: #fff;
+}
+.home .content p{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #fff;
+}
+.home .container-img{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+.home .content{
+    width: 450px;
+    height: 150px;
+    margin: 0;
+}
+.home .content .btn{
+    font-family: sans-serif;
+    background: #f3961c;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    margin:10px;
+    margin-top: 15px;
+    transition: .2s;
+    
+}
+.home .content .btn:hover{
+    color: #fff;
+}
