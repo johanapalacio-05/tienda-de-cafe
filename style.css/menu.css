@@ -22,7 +22,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 60px;
 }
 .container-header header .logo a{
    font-family: sans-serif;
@@ -33,6 +33,17 @@ html{
 .container-header header ul{
     display: flex;
     list-style: none;
+}
+.carrito{
+    color: #ffffff;
+    position: absolute;
+    left: 98%;
+    transition: 0.3s;
+    
+}
+.carrito:hover{
+    background: #f3961c;
+    color: #3b141c;
 }
 .container-header header nav ul li a{
     font-family: sans-serif;
@@ -47,6 +58,8 @@ html{
 .container-header header nav ul li a:hover{
     background: #f3961c;
     color: #3b141c;
+    border-radius: 8px;
+    margin: 10px;
 }
 
 .titulo {
@@ -120,15 +133,25 @@ html{
     color: #fff;
 }
 
-.boton{
+.btn{
     border-radius: 10px;
     background-color: #f3961c;
     width: 150px;
     height: 50px;
     text-align: center;
 }
+.boton1{
+     border-radius: 10px;
+    background-color: #f3961c;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
+.boton1:hover{
+    color: #fff;
+}
 
-.boton:hover{
+.btn:hover{
     color: #fff;
 }
 
@@ -181,6 +204,18 @@ html{
     #menu-toggle:checked + .menu-icon + nav ul {
         display: flex;
     }
+
+.carrito #contador {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #e2750f;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 7px;
+    border-radius: 50%;
+}
 
 
 
