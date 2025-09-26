@@ -94,3 +94,74 @@ html{
 .container .boton input:hover{
     transform: scale(1.1);
 }
+
+@media (max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+        margin: 20% 10%;
+        text-align: center;
+        margin-left: 0%;
+
+    
+
+    }
+    .container-req .input .cuadro{
+    border-radius:10px ;
+    height: 30px;
+    width: 400px;
+
+}
+.container-req .input-mensaje .mensaje{
+    border-radius:10px ;
+    height: 100px;
+    width: 400px;
+
+}
+    .container .boton input{
+        margin-top: 20px;
+    }
+
+}
+#menu-toggle {
+        display: none;
+    }
+
+
+/*Responsive menu navar*/
+@media(max-width:768px) {
+    #menu-toggle {
+        display: none;
+    }
+
+
+.menu-icon {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #ffffff;/*color de tu logo*/
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 300;
+}
+
+
+/*Menu oculto*/
+.container-header header .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 250;
+}
+
+/*Mostrar menu al activar */
+#menu-toggle:checked ~ .nav ul {
+    display: flex;
+}

@@ -13,6 +13,10 @@
         <div class="logo">
             <a href="#"> ☕️ Coffee</a>
         </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav class="nav">
              <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -36,14 +40,15 @@
             <p><i class="fa-solid fa-globe"></i>www.codingnepalweb.com</p>
         </div>
         <div class="container-req">
-            <label for="your name"></label><br>
-            <input type="text" id="nombre" name="nombre" required placeholder="your name">
+            
+           <div class="input">
+                <input type="text" class="cuadro" name="nombre" required placeholder="your name">
+                <input type="email" class="cuadro" name="email" required placeholder="your email">
+           </div>
 
-            <label for="email"></label><br>
-            <input type="email" id="email" name="email" required placeholder="your email">
-
-            <label for="message"></label><br>
-            <textarea name="mensaje" id="mensaje" rows="5" required placeholder="your message"></textarea>
+           <div class="input-mensaje">
+            <textarea name="mensaje" class="mensaje" rows="5" required placeholder="your message"></textarea>
+           </div>
             <div class="boton">
                 <input type="submit" value="enviar"> 
             </div>

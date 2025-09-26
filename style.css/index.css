@@ -96,3 +96,128 @@ html{
 .home .content .btn:hover{
     color: #fff;
 }
+
+.home .container-img img{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    border: 10px solid #f3961c;
+}
+/*Menu*/
+.menu .container {
+    display: grid;  
+    gap: 0px;  
+    max-width: 1000px;
+    margin: 0 580px;                            
+    margin-top: 35px;
+    grid-template-columns: repeat(3,1fr);
+}
+.container .move img {
+    width: 450px;
+    height: 350px;
+    border-radius: 15px;
+    margin: 15px 15px;
+ 
+}
+.titulo {
+    font-family: 'Righteous', cursive;
+    color: #3b141c;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+#menu-toggle {
+    display: none !important;
+}
+@media (max-width: 768px) {
+    .container-header header {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .container-header header nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background-color: rgb(0,0,0,0.5);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        border-radius: 6px;
+        z-index: 250;
+        }
+
+
+    .container-header header nav ul li {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 28px;
+        position: absolute;
+        right: 30px;
+        top:10px;
+        z-index: 300;
+    }
+
+    #menu-toggle:checked + .menu-icon + nav ul {
+        display: flex;
+    }
+
+.home {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.home .container-img {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .container-img img {
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    margin-top: 0px;
+}
+.home .content {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    align-items: center;
+}
+.home .content h3 {
+    font-size: 40px;
+    font-family: 'miniver', sans-serif;
+}
+.home .content h1 {
+    font-size: 40px;
+    align-items: center;
+}
+.home .content p {
+    font-size: 20px;
+    align-items: center;
+}
+.btn {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.home .content .btn {
+    margin-top: 10px;
+
+}
