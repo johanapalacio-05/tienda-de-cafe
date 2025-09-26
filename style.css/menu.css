@@ -181,5 +181,5 @@ html{
     #menu-toggle:checked + .menu-icon + nav ul {
         display: flex;
     }
-
+}
 
